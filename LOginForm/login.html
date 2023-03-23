@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <script src="JavaScript/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="siForm">
+            <form action="PHP/login.php" method="post">
+                <input id="txt" type="text" name="username" placeholder="Enter Username or email" onclick="change(this)" data-num="1">
+                <input id="txt" type="password" name="password" autocomplete="off" placeholder="Enter Password" onclick="change(this)" data-num="2">
+                <div class="exInfo">
+                    <div class="checkBox">
+                        <label>Remeber me</label>
+                        <input type="checkbox">
+                    </div>
+                    <a href="index.html">Already have an account?</a>
+                    <input id="sub" type="submit" name="signIn" value="Log In">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

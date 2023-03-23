@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Side</title>
+    <link rel="stylesheet" href="CSS/signup.css">
+    <script src="JavaScript/script.js" defer></script>
+</head>
+<body>
+    <div class="container" method="post">
+        <div class="siForm">
+            <form action="PHP/signup.php" method="post">
+                <input id="txt" type="text" name="username" placeholder="Enter Username" onclick="change(this)" data-num="1">
+                <input id="txt" type="email" name="email" placeholder="Enter Email" onclick="change(this)" data-num="2">
+                <input id="txt" type="password" name="password" autocomplete="off" placeholder="Enter Password" onclick="change(this)" data-num="3">
+                <input id="txt" type="password" name="reType" autocomplete="off" placeholder="Re-enter Password" onclick="change(this)" data-num="4">
+                <div class="exInfo">
+                    <div class="checkBox">
+                        <label>I accept the terms of service</label>
+                        <input type="checkbox">
+                        <label>Remeber me</label>
+                        <input type="checkbox">
+                    </div>
+                    <a href="login.html">Already have an account?</a>
+                    <input id="sub" type="submit" name="signIn" value="Sign In">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
